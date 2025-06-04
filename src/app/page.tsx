@@ -71,7 +71,7 @@ export default function Home() {
             {selectedState ? `${selectedState.state} Counties` : 'Select a State to see Counties'}
           </h2>
           {selectedState && selectedState.counties.length > 0 ? (
-            <ul className="space-y-2 max-h-96 overflow-y-auto">
+            <ul className="space-y-2">
               {selectedState.counties.map((county) => (
                 <li key={county} className="p-3 bg-green-200 rounded-md">
                   {county}
